@@ -40,7 +40,7 @@
 
     <!-- start header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-boxed navbar-light bg-transparent header-light fixed-top header-reverse-scroll">
+        <nav class="navbar navbar-expand-lg navbar-boxed navbar-dark bg-transparent header-light fixed-top header-reverse-scroll">
             <div class="container-fluid nav-header-container">
 
                 <div class="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
@@ -89,64 +89,217 @@
 
                         <!-- Slide 1: Gym -->
                         <li data-index="rs-1" data-transition="fade" data-masterspeed="800" data-title="Gym mats">
-                            <img src="images/hero/slider/hero-gym-slider-1400x700.jpg" alt="Gym rubber flooring mats"
+                            <img src="images/hero/slider/hero-gym-slider-1400x700.jpg" fetchpriority="high" alt="Gym rubber flooring mats"
                                  class="rev-slidebg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina>
-
-                            <!-- Overlay (keeps text readable across bright images) -->
-                            <div class="tp-caption tp-shape tp-shapewrapper"
-                                 data-x="center" data-y="middle" data-width="full" data-height="full" data-basealign="slide"
+                            <!-- LAYERS: Slide 1 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-10"
+                                 data-x="['center','center','center','center']" data-hoffset="['980','800','0','0']"
+                                 data-y="['middle','middle','middle','middle']" data-voffset="['200','220','900','850']"
+                                 data-width="1500" data-height="1500"
+                                 data-whitespace="nowrap"
+                                 data-type="shape"
                                  data-responsive_offset="on"
-                                 data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},
-                                              {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power2.easeInOut"}]'
-                                 style="background:rgba(0,0,0,0.25); z-index: 5;">
+                                 data-frames='[{"delay":300,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                                 style="z-index: 5;background:rgba(255,140,0,0.08);border-radius:100%;">
+                                <div class="rs-looped rs-wave" data-speed="10" data-angle="0" data-radius="10px" data-origin="50% 50%"></div>
                             </div>
 
-                            <div class="tp-caption tp-resizeme alt-font text-white font-weight-500"
+                            <div class="tp-caption tp-resizeme alt-font text-white text-medium font-weight-500"
+                                 data-type="text"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
                                  data-x="['left','left','center','center']" data-hoffset="['0','102','0','0']"
                                  data-y="['middle','middle','middle','middle']" data-voffset="['-185','-120','-410','-300']"
-                                 data-frames='[{"delay":600,"speed":1000,"frame":"0","from":"x:[100%];","mask":"x:[-100%];","to":"o:0.9;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;"}]'
-                                 style="z-index: 7; text-transform: uppercase; letter-spacing: 2px;">INDUSTRIAL RUBBER MATS</div>
+                                 data-responsive_offset="on"
+                                 data-frames='[{"delay":900,"speed":1000,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:[-100%];y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                 style="z-index: 7; text-transform: uppercase; letter-spacing: 2px;">
+                                GYM &amp; FITNESS FLOORING
+                            </div>
 
                             <div class="tp-caption alt-font text-white"
+                                 data-type="text"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
                                  data-x="['left','left','center','center']" data-hoffset="['0','100','0','0']"
                                  data-y="['middle','middle','middle','middle']" data-voffset="['-40','-10','-290','-220']"
                                  data-fontsize="['90','64','64','46']"
                                  data-lineheight="['84','64','64','46']"
-                                 data-frames='[{"delay":900,"speed":1000,"frame":"0","from":"x:[100%];","mask":"x:[-100%];","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;"}]'
+                                 data-responsive_offset="on"
+                                 data-frames='[{"delay":900,"speed":1000,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:[-100%];y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                  style="z-index: 8;letter-spacing: -2px;">
                                 <strong>RUBBERMATS.CH</strong><br /> Swiss &amp; EU Distribution
                             </div>
 
                             <a class="tp-caption tp-resizeme btn btn-medium btn-white btn-box-shadow"
+                               data-type="button"
+                               data-width="none"
+                               data-height="none"
+                               data-whitespace="nowrap"
                                href="products.html"
                                data-x="['left','left','center','center']" data-hoffset="['24','122','0','0']"
                                data-y="['middle','middle','middle','middle']" data-voffset="['115','120','-160','-110']"
-                               data-frames='[{"delay":1200,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;"}]'
-                               style="z-index: 9;box-shadow: 0 0 15px rgba(0,0,0,.1);">View Products</a>
+                               data-responsive_offset="on"
+                               data-frames='[{"delay":1200,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                               style="z-index: 9; box-shadow: 0 0 15px rgba(0,0,0,.15);">
+                                View Products
+                            </a>
+
+                            <a class="tp-caption tp-resizeme btn btn-medium btn-neon-orange btn-box-shadow"
+                               data-type="button"
+                               data-width="none"
+                               data-height="none"
+                               data-whitespace="nowrap"
+                               href="contact.html#rfq"
+                               data-x="['left','left','center','center']" data-hoffset="['210','320','0','0']"
+                               data-y="['middle','middle','middle','middle']" data-voffset="['115','120','-90','-55']"
+                               data-responsive_offset="on"
+                               data-frames='[{"delay":1200,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                               style="z-index: 10; box-shadow: 0 0 15px rgba(0,0,0,.15);">
+                                Request a Quote
+                            </a>
+
                         </li>
 
                         <!-- Slide 2: Dairy -->
                         <li data-index="rs-2" data-transition="fade" data-masterspeed="800" data-title="Dairy mats">
                             <img src="images/hero/slider/hero-dairy-slider-1400x700.jpg" alt="Dairy and stable rubber mats"
                                  class="rev-slidebg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina>
+
+                            <div class="tp-caption tp-resizeme alt-font text-white text-medium font-weight-500"
+                                 data-type="text"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-x="['left','left','center','center']" data-hoffset="['0','102','0','0']"
+                                 data-y="['middle','middle','middle','middle']" data-voffset="['-185','-120','-410','-300']"
+                                 data-responsive_offset="on"
+                                 data-frames='[{"delay":900,"speed":1000,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:[-100%];y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                 style="z-index: 7; text-transform: uppercase; letter-spacing: 2px;">
+                                DAIRY &amp; STABLE MATS
+                            </div>
+
+                            <div class="tp-caption alt-font text-white"
+                                 data-type="text"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-x="['left','left','center','center']" data-hoffset="['0','100','0','0']"
+                                 data-y="['middle','middle','middle','middle']" data-voffset="['-40','-10','-290','-220']"
+                                 data-fontsize="['90','64','64','46']"
+                                 data-lineheight="['84','64','64','46']"
+                                 data-responsive_offset="on"
+                                 data-frames='[{"delay":900,"speed":1000,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:[-100%];y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                 style="z-index: 8;letter-spacing: -2px;">
+                                Durable comfort &amp; traction<br /> for livestock flooring
+                            </div>
+
                         </li>
 
                         <!-- Slide 3: Kitchen -->
                         <li data-index="rs-3" data-transition="fade" data-masterspeed="800" data-title="Kitchen mats">
                             <img src="images/hero/slider/hero-kitchen-slider-1400x700.jpg" alt="Kitchen anti-fatigue rubber mats"
                                  class="rev-slidebg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina>
+
+                            <div class="tp-caption tp-resizeme alt-font text-white text-medium font-weight-500"
+                                 data-type="text"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-x="['left','left','center','center']" data-hoffset="['0','102','0','0']"
+                                 data-y="['middle','middle','middle','middle']" data-voffset="['-185','-120','-410','-300']"
+                                 data-responsive_offset="on"
+                                 data-frames='[{"delay":900,"speed":1000,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:[-100%];y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                 style="z-index: 7; text-transform: uppercase; letter-spacing: 2px;">
+                                KITCHEN &amp; WORKPLACE MATS
+                            </div>
+
+                            <div class="tp-caption alt-font text-white"
+                                 data-type="text"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-x="['left','left','center','center']" data-hoffset="['0','100','0','0']"
+                                 data-y="['middle','middle','middle','middle']" data-voffset="['-40','-10','-290','-220']"
+                                 data-fontsize="['90','64','64','46']"
+                                 data-lineheight="['84','64','64','46']"
+                                 data-responsive_offset="on"
+                                 data-frames='[{"delay":900,"speed":1000,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:[-100%];y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                 style="z-index: 8;letter-spacing: -2px;">
+                                Anti-fatigue &amp; slip-resistant<br /> for professional kitchens
+                            </div>
+
                         </li>
 
                         <!-- Slide 4: Warehouse -->
                         <li data-index="rs-4" data-transition="fade" data-masterspeed="800" data-title="Warehouse mats">
                             <img src="images/hero/slider/hero-warehouse-slider-1400x700.jpg" alt="Industrial warehouse rubber flooring mats"
                                  class="rev-slidebg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina>
+
+                            <div class="tp-caption tp-resizeme alt-font text-white text-medium font-weight-500"
+                                 data-type="text"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-x="['left','left','center','center']" data-hoffset="['0','102','0','0']"
+                                 data-y="['middle','middle','middle','middle']" data-voffset="['-185','-120','-410','-300']"
+                                 data-responsive_offset="on"
+                                 data-frames='[{"delay":900,"speed":1000,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:[-100%];y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                 style="z-index: 7; text-transform: uppercase; letter-spacing: 2px;">
+                                INDUSTRIAL FLOORING
+                            </div>
+
+                            <div class="tp-caption alt-font text-white"
+                                 data-type="text"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-x="['left','left','center','center']" data-hoffset="['0','100','0','0']"
+                                 data-y="['middle','middle','middle','middle']" data-voffset="['-40','-10','-290','-220']"
+                                 data-fontsize="['90','64','64','46']"
+                                 data-lineheight="['84','64','64','46']"
+                                 data-responsive_offset="on"
+                                 data-frames='[{"delay":900,"speed":1000,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:[-100%];y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                 style="z-index: 8;letter-spacing: -2px;">
+                                Heavy-duty mats for<br /> warehouses &amp; workshops
+                            </div>
+
                         </li>
 
                         <!-- Slide 5: Entrance -->
                         <li data-index="rs-5" data-transition="fade" data-masterspeed="800" data-title="Entrance mats">
                             <img src="images/hero/slider/hero-entrance-slider-1400x700.jpg" alt="Entrance and outdoor rubber mats"
                                  class="rev-slidebg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina>
+
+                            <div class="tp-caption tp-resizeme alt-font text-white text-medium font-weight-500"
+                                 data-type="text"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-x="['left','left','center','center']" data-hoffset="['0','102','0','0']"
+                                 data-y="['middle','middle','middle','middle']" data-voffset="['-185','-120','-410','-300']"
+                                 data-responsive_offset="on"
+                                 data-frames='[{"delay":900,"speed":1000,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:[-100%];y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                 style="z-index: 7; text-transform: uppercase; letter-spacing: 2px;">
+                                ENTRANCE &amp; OUTDOOR MATS
+                            </div>
+
+                            <div class="tp-caption alt-font text-white"
+                                 data-type="text"
+                                 data-width="none"
+                                 data-height="none"
+                                 data-whitespace="nowrap"
+                                 data-x="['left','left','center','center']" data-hoffset="['0','100','0','0']"
+                                 data-y="['middle','middle','middle','middle']" data-voffset="['-40','-10','-290','-220']"
+                                 data-fontsize="['90','64','64','46']"
+                                 data-lineheight="['84','64','64','46']"
+                                 data-responsive_offset="on"
+                                 data-frames='[{"delay":900,"speed":1000,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:[-100%];y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                 style="z-index: 8;letter-spacing: -2px;">
+                                Weather-resistant solutions<br /> for high-traffic areas
+                            </div>
+
                         </li>
 
                     </ul>
@@ -169,7 +322,7 @@
                 <div class="col-sm-10 shop-category-style-02 lg-margin-4-rem-bottom sm-margin-6-rem-bottom">
                     <div class="shop-product align-items-center d-flex padding-30px-lr xs-no-padding-lr">
                         <div class="shop-product-image text-center d-flex justify-content-center align-items-center">
-                            <img src="images/hero/hero-gym.jpg" alt="Gym mats" />
+                            <img src="images/hero/tiles/hero-gym-tile-800x600.jpg" loading="lazy" decoding="async" alt="Gym mats" />
                             <a href="products.html#gym" class="d-inline-block line-height-65px rounded-circle bg-extra-dark-gray box-shadow-extra-large h-60px w-60px position-absolute product-view-link"><i class="feather icon-feather-arrow-right text-white icon-extra-small"></i></a>
                         </div>
                         <div class="shop-product-overlay position-relative">
@@ -182,7 +335,7 @@
                 <div class="col-sm-10 shop-category-style-02 lg-margin-4-rem-bottom sm-margin-6-rem-bottom">
                     <div class="shop-product align-items-center d-flex padding-30px-lr xs-no-padding-lr">
                         <div class="shop-product-image text-center d-flex justify-content-center align-items-center">
-                            <img src="images/hero/hero-dairy.jpg" alt="Dairy and stable mats" />
+                            <img src="images/hero/tiles/hero-dairy-tile-800x600.jpg" loading="lazy" decoding="async" alt="Dairy and stable mats" />
                             <a href="products.html#dairy" class="d-inline-block line-height-65px rounded-circle bg-extra-dark-gray box-shadow-extra-large h-60px w-60px position-absolute product-view-link"><i class="feather icon-feather-arrow-right text-white icon-extra-small"></i></a>
                         </div>
                         <div class="shop-product-overlay position-relative">
@@ -195,7 +348,7 @@
                 <div class="col-sm-10 shop-category-style-02">
                     <div class="shop-product align-items-center d-flex padding-30px-lr xs-no-padding-lr">
                         <div class="shop-product-image text-center d-flex justify-content-center align-items-center">
-                            <img src="images/hero/hero-kitchen.jpg" alt="Kitchen and restaurant mats" />
+                            <img src="images/hero/tiles/hero-kitchen-tile-800x600.jpg" loading="lazy" decoding="async" alt="Kitchen and restaurant mats" />
                             <a href="products.html#kitchen" class="d-inline-block line-height-65px rounded-circle bg-extra-dark-gray box-shadow-extra-large h-60px w-60px position-absolute product-view-link"><i class="feather icon-feather-arrow-right text-white icon-extra-small"></i></a>
                         </div>
                         <div class="shop-product-overlay position-relative">
@@ -241,8 +394,10 @@
                     <div class="margin-10px-top">Email: <a href="mailto:info@rubbermats.ch" class="text-white">info@rubbermats.ch</a> | WhatsApp: <a href="https://wa.me/41763490123" class="text-white">+41 76 349 01 23</a></div>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <span class="small">©
-                    <script>document.write(new Date().getFullYear());</script> RUBBERMATS.CH. All rights reserved.</span>
+                    <span class="small">
+                        ©
+                        <script>document.write(new Date().getFullYear());</script> RUBBERMATS.CH. All rights reserved.
+                    </span>
                 </div>
             </div>
         </div>
@@ -251,7 +406,6 @@
     <!-- JS -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/theme-vendors.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
 
     <!-- Revolution slider files -->
     <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
@@ -259,6 +413,9 @@
     <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
     <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
 
     <script>// Minimal slider init guard
         if (window.jQuery && jQuery.fn && jQuery.fn.revolution) {
