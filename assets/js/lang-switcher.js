@@ -9,30 +9,44 @@
   var SUPPORTED = ['fr', 'de', 'en'];
   var DEFAULT_LANG = 'fr';
 
-  // Page mapping: { fr: filename, de: filename, en: filename }
-  var PAGE_MAP = [
-    { fr: 'index.html',    de: 'index.html',    en: 'index.html' },
-    { fr: 'produits.html',  de: 'produkte.html',  en: 'products.html' },
-    { fr: 'a-propos.html',  de: 'ueber-uns.html', en: 'about.html' },
-    { fr: 'contact.html',   de: 'kontakt.html',   en: 'contact.html' }
-  ];
+  // Canonical route mappings (scales better than manual per-page maps)
+  var SECTION_ALIASES = {
+    products: 'products',
+    produits: 'products',
+    produkte: 'products'
+  };
 
-  /**
-   * Detect current language from the URL path (first segment after /).
-   */
+  var SECTION_BY_LANG = {
+    products: { fr: 'produits', de: 'produkte', en: 'products' }
+  };
+
+  var FILE_ALIASES = {
+    'index.html': 'index.html',
+    '404.html': '404.html',
+    'products.html': 'products.html',
+    'produits.html': 'products.html',
+    'produkte.html': 'products.html',
+    'about.html': 'about.html',
+    'a-propos.html': 'about.html',
+    'ueber-uns.html': 'about.html',
+    'contact.html': 'contact.html',
+    'kontakt.html': 'contact.html'
+  };
+
+  var FILE_BY_LANG = {
+    'index.html': { fr: 'index.html', de: 'index.html', en: 'index.html' },
+    '404.html': { fr: '404.html', de: '404.html', en: '404.html' },
+    'products.html': { fr: 'produits.html', de: 'produkte.html', en: 'products.html' },
+    'about.html': { fr: 'a-propos.html', de: 'ueber-uns.html', en: 'about.html' },
+    'contact.html': { fr: 'contact.html', de: 'kontakt.html', en: 'contact.html' }
+  };
+
   function detectCurrentLang() {
     var segments = window.location.pathname.split('/').filter(Boolean);
-    for (var i = 0; i < segments.length; i++) {
-      if (SUPPORTED.indexOf(segments[i]) !== -1) {
-        return segments[i];
-      }
-    }
+    if (segments.length > 0 && SUPPORTED.indexOf(segments[0]) !== -1) return segments[0];
     return null;
   }
 
-  /**
-   * Get the preferred language: stored > browser > default.
-   */
   function getPreferredLang() {
     var stored = localStorage.getItem(STORAGE_KEY);
     if (stored && SUPPORTED.indexOf(stored) !== -1) return stored;
@@ -43,67 +57,52 @@
     return DEFAULT_LANG;
   }
 
-  /**
-   * Find the current page's filename in the page map.
-   */
-  function getCurrentPageFile() {
-    var path = window.location.pathname;
-    var filename = path.split('/').pop() || 'index.html';
-    return filename;
+  function mapSectionForLang(rawSection, targetLang) {
+    if (!rawSection) return null;
+    var canonical = SECTION_ALIASES[rawSection] || rawSection;
+    var mapped = SECTION_BY_LANG[canonical];
+    return mapped ? mapped[targetLang] : rawSection;
   }
 
-  /**
-   * Given a current page filename and the current language, find the equivalent page in the target language.
-   */
-  function getEquivalentPage(currentFile, fromLang, toLang) {
-    for (var i = 0; i < PAGE_MAP.length; i++) {
-      if (PAGE_MAP[i][fromLang] === currentFile) {
-        return PAGE_MAP[i][toLang];
-      }
-    }
-    // Fallback to index if no match found
-    return 'index.html';
+  function mapFileForLang(rawFile, targetLang) {
+    var canonical = FILE_ALIASES[rawFile] || rawFile;
+    var mapped = FILE_BY_LANG[canonical];
+    return mapped ? mapped[targetLang] : rawFile;
   }
 
-  /**
-   * Build the URL for a target language, preserving the current page context.
-   */
   function buildLangUrl(targetLang) {
     var currentLang = detectCurrentLang();
-    var currentFile = getCurrentPageFile();
-    var targetFile = currentLang
-      ? getEquivalentPage(currentFile, currentLang, targetLang)
-      : 'index.html';
+    var segments = window.location.pathname.split('/').filter(Boolean);
 
-    // Build path relative to site root
-    var basePath = window.location.pathname.split('/').slice(0, -1);
-    // Replace language segment or build fresh
-    var newPath = '/' + targetLang + '/' + targetFile;
+    if (currentLang) segments.shift();
 
-    return newPath;
+    if (segments.length === 0) {
+      return '/' + targetLang + '/index.html' + window.location.search + window.location.hash;
+    }
+
+    var filenameIndex = segments.length - 1;
+    var rawFile = segments[filenameIndex] || 'index.html';
+    var mappedFile = mapFileForLang(rawFile, targetLang);
+
+    if (segments.length > 1) {
+      segments[0] = mapSectionForLang(segments[0], targetLang);
+    }
+    segments[filenameIndex] = mappedFile;
+
+    return '/' + targetLang + '/' + segments.join('/') + window.location.search + window.location.hash;
   }
 
-  /**
-   * Switch to a new language.
-   */
   function switchLang(targetLang) {
     if (SUPPORTED.indexOf(targetLang) === -1) return;
     localStorage.setItem(STORAGE_KEY, targetLang);
-    var url = buildLangUrl(targetLang);
-    window.location.href = url;
+    window.location.href = buildLangUrl(targetLang);
   }
 
-  /**
-   * Update <html lang=""> attribute to match current language.
-   */
   function updateHtmlLang() {
     var lang = detectCurrentLang() || getPreferredLang();
     document.documentElement.setAttribute('lang', lang);
   }
 
-  /**
-   * Highlight the active language in the switcher UI.
-   */
   function highlightActiveLang() {
     var current = detectCurrentLang() || getPreferredLang();
     var buttons = document.querySelectorAll('[data-lang]');
@@ -125,34 +124,23 @@
     }
   }
 
-  /**
-   * Bind click handlers to language switcher buttons.
-   * Expects elements with data-lang="fr|de|en" attribute.
-   */
   function bindSwitcherButtons() {
     var buttons = document.querySelectorAll('[data-lang]');
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].addEventListener('click', function (e) {
         e.preventDefault();
-        var lang = this.getAttribute('data-lang');
-        switchLang(lang);
+        switchLang(this.getAttribute('data-lang'));
       });
     }
   }
 
-  /**
-   * Initialize on DOM ready.
-   */
   function init() {
     updateHtmlLang();
     bindSwitcherButtons();
     highlightActiveLang();
 
-    // Store current language preference
     var current = detectCurrentLang();
-    if (current) {
-      localStorage.setItem(STORAGE_KEY, current);
-    }
+    if (current) localStorage.setItem(STORAGE_KEY, current);
   }
 
   if (document.readyState === 'loading') {
@@ -161,7 +149,6 @@
     init();
   }
 
-  // Expose for programmatic use
   window.RMlang = {
     switchLang: switchLang,
     getCurrentLang: detectCurrentLang,

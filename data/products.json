@@ -111,22 +111,22 @@
           "size": "1.82m x 1.2m x 17mm"
         },
         {
-          "code": "TJP CW  01",
-          "description": "Diamond Top - Sraight",
+          "code": "TJP CW 02",
+          "description": "Diamond Top - Straight",
           "size": "1.82m x 1.2m x 17mm"
         },
         {
-          "code": "TJP CW  01",
-          "description": "Check Top - Staright",
+          "code": "TJP CW 03",
+          "description": "Check Top - Straight",
           "size": "1.82m x 1.2m x 17mm"
         },
         {
-          "code": "TJP CW LK  02",
+          "code": "TJP CW LK 02",
           "description": "Diamond Top - Lock",
           "size": "1.82m x 1.2m x 20mm"
         },
         {
-          "code": "TJP CW LK  03",
+          "code": "TJP CW LK 03",
           "description": "Hammer Top - Lock",
           "size": "1.92m x 1.2m x 23mm"
         }
@@ -143,7 +143,7 @@
       "description": {
         "en": "Interlocking rubber gym mats for commercial and home fitness. Available in tile and roll formats.",
         "fr": "Tapis de gym en caoutchouc emboîtables pour fitness commercial et domestique. Disponibles en dalles et rouleaux.",
-        "de": "Ineinandergreifende Gummi-Gymnastikmaten für gewerbliches und Heimfitness. Als Fliesen und Rollen erhältlich."
+        "de": "Ineinandergreifende Gummi-Gymnastikmatten für gewerbliches und Heimfitness. Als Fliesen und Rollen erhältlich."
       },
       "variants": [
         {
@@ -162,12 +162,12 @@
           "size": "1Mtr x 1Mtr x 14mm"
         },
         {
-          "code": "TJP GM 01",
+          "code": "TJP GM 04",
           "description": "Rubber Gym Mats",
           "size": "90cm x 90cm x 16mm"
         },
         {
-          "code": "TJP GM 02",
+          "code": "TJP GM 05",
           "description": "Rubber Gym Mats",
           "size": "90cm x 90cm x 15mm"
         }
@@ -260,7 +260,7 @@
         "de": "Rollenmatte"
       },
       "description": {
-        "en": "Large format rubber roll mats for commercial corridors, gyms and outdoor areas. Hexagon, hollow, squarow and comfort patterns.",
+        "en": "Large format rubber roll mats for commercial corridors, gyms and outdoor areas. Hexagon, hollow, square and comfort patterns.",
         "fr": "Tapis en rouleau grand format pour couloirs commerciaux, gymnases et espaces extérieurs. Motifs hexagone, creux, carré et confort.",
         "de": "Großformatige Gummirollenmatten für Gewerbekorridore, Turnhallen und Außenbereiche. Sechseck-, Hohl-, Quadrat- und Komfortmuster."
       },
@@ -426,7 +426,7 @@
         },
         {
           "code": "TJP BSP 01",
-          "description": "Boot Scrap Mat",
+          "description": "Boot Scraper Mat",
           "size": "39cm x 31cm x 64mm"
         },
         {
