@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -l \"litho\" /c/Users/baby/source/repos/RubberMats/css/*.css /c/Users/baby/source/repos/RubberMats/litho-template/html/css/*.css)",
+      "Bash(ls /c/Users/baby/source/repos/RubberMats/litho-template/html/*.html)",
+      "Bash(xargs ls:*)",
+      "Bash(du -sh /c/Users/baby/source/repos/RubberMats/*)",
+      "Bash(grep -r \"lang=\" /c/Users/baby/source/repos/RubberMats/*.html)",
+      "Bash(ls -d /c/Users/baby/source/repos/RubberMats/revolution/revolution-addons/*/)",
+      "Bash(ls -d /c/Users/baby/source/repos/RubberMats/litho-template/html/*/)",
+      "Bash(node _generate-placeholders.js)",
+      "Bash(ls *.html site.webmanifest)",
+      "Bash(node _generate-pages.js)",
+      "Bash(ls fr/produits/*.html)",
+      "Bash(ls de/produkte/*.html)",
+      "Bash(ls en/products/*.html)",
+      "WebFetch(domain:rubbermats.ch)",
+      "Bash(grep -v \"^\\\\.$\")",
+      "Bash(grep -v \"^\\\\.\\\\.$\")",
+      "Bash(grep -r \"src=\" /c/Users/baby/source/repos/RubberMats/*.html)",
+      "Bash(grep -r \"data-src=\" /c/Users/baby/source/repos/RubberMats/*.html)",
+      "Bash(grep -r \"background-image:\" /c/Users/baby/source/repos/RubberMats/*.html)",
+      "Bash([ -f \"/c/Users/baby/source/repos/RubberMats/$img\" ])",
+      "Bash(grep -l \"slide-gym\\\\|slide-stable\" /c/Users/baby/source/repos/RubberMats/en/*.html)",
+      "Bash([ -f \"$d/main.jpg\" ])",
+      "Bash(cp hero-gym-slider-1920x800.jpg slide-gym-1920x1080.jpg)",
+      "Bash(cp hero-dairy-slider-1920x800.jpg slide-stable-1920x1080.jpg)",
+      "Bash(cp hero-entrance-slider-1920x800.jpg slide-entrance-1920x1080.jpg)",
+      "Bash(ls -la slide-*)",
+      "Bash(sed -i 's/#ff6b35/#2D6A3F/gi' assets/js/cookie-consent.js)",
+      "Bash(python3 -c ':*)",
+      "Bash(node -e ':*)",
+      "Bash(node _update-logos.js)",
+      "Bash(rm -f _update-logos.js)",
+      "Bash(node _fix-pages.js)",
+      "Bash(rm _fix-pages.js)",
+      "Bash(node _fix-credit2.js)",
+      "Bash(rm _fix-credit2.js)"
+    ]
+  }
+}

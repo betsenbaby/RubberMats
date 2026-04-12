@@ -1,0 +1,70 @@
+Options -Indexes
+RewriteEngine On
+
+# ─── Force HTTPS ──────────────────────────────────────────
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ─── Force non-www ────────────────────────────────────────
+RewriteCond %{HTTP_HOST} ^www\.rubbermats\.ch [NC]
+RewriteRule ^ https://rubbermats.ch%{REQUEST_URI} [L,R=301]
+
+# ─── Old root pages → new multilingual structure (301) ────
+RewriteRule ^products-dairy\.html$      /fr/produits/cow-stable-mat.html [L,R=301]
+RewriteRule ^products-entrance\.html$   /fr/produits/hollow-mat.html [L,R=301]
+RewriteRule ^products-gym\.html$        /fr/produits/gym-mat.html [L,R=301]
+RewriteRule ^products-kitchen\.html$    /fr/produits/restaurant-mat.html [L,R=301]
+RewriteRule ^products-warehouse\.html$  /fr/produits/roll-mat.html [L,R=301]
+RewriteRule ^products\.html$            /fr/produits.html [L,R=301]
+RewriteRule ^quote\.html$               /fr/contact.html [L,R=301]
+
+# ─── Clean URLs: /fr/ → /fr/index.html ───────────────────
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(fr|de|en)/$ /$1/index.html [L]
+
+# ─── Sitemap ──────────────────────────────────────────────
+RewriteRule ^sitemap\.xml$ /sitemap.xml [L]
+
+# ─── 404 handler ─────────────────────────────────────────
+ErrorDocument 404 /fr/404.html
+
+# ─── Security headers ────────────────────────────────────
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# ─── Cache static assets (30 days) ──────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType image/x-icon "access plus 7 days"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType font/woff2 "access plus 30 days"
+  ExpiresByType font/woff "access plus 30 days"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jpg|jpeg|png|gif|svg|ico|css|js|woff2?)$">
+    Header set Cache-Control "max-age=2592000, public"
+  </FilesMatch>
+</IfModule>
+
+# ─── Gzip compression ───────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# ─── Block sensitive files ──────────────────────────────
+<FilesMatch "(^\.git|\.gitignore|mail-config\.local\.php|\.md$)">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+</FilesMatch>

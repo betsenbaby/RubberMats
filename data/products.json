@@ -1,0 +1,485 @@
+{
+  "categories": [
+    {
+      "id": "hollow-mat",
+      "use_case": "entrance",
+      "name": {
+        "en": "Hollow Mat",
+        "fr": "Tapis Creux",
+        "de": "Hohle Matte"
+      },
+      "description": {
+        "en": "Drainage rubber mats with hollow hexagonal structure. Ideal for wet areas, entrances and outdoor use.",
+        "fr": "Tapis en caoutchouc à drainage avec structure hexagonale creuse. Idéal pour les zones humides, entrées et usage extérieur.",
+        "de": "Drainagematten aus Gummi mit hohler Sechseckstruktur. Ideal für Nassbereiche, Eingänge und den Außenbereich."
+      },
+      "top_patterns": [
+        "Hollow",
+        "Hexagon"
+      ],
+      "variants": [
+        {
+          "code": "TJPHO 01",
+          "description": "Hollow Mats",
+          "size": "40 x 60 x 16"
+        },
+        {
+          "code": "TJPHO 02",
+          "description": "Hollow Mats",
+          "size": "45 x 75 x 16"
+        },
+        {
+          "code": "TJPHO 03",
+          "description": "Hollow Mats",
+          "size": "50 x 80 x 16"
+        },
+        {
+          "code": "TJPHO 04",
+          "description": "Hollow Mats",
+          "size": "50 x 100 x 16"
+        },
+        {
+          "code": "TJPHO 05",
+          "description": "Hollow Mats",
+          "size": "80 x 120 x 16"
+        },
+        {
+          "code": "TJPHO 06",
+          "description": "Hollow Mats",
+          "size": "40 x 60 x 22"
+        },
+        {
+          "code": "TJPHO 07",
+          "description": "Hollow Mats",
+          "size": "45 x 75 x 22"
+        },
+        {
+          "code": "TJPHO 08",
+          "description": "Hollow Mats",
+          "size": "50 x 100 x 22"
+        },
+        {
+          "code": "TJPHO 09",
+          "description": "Hollow Mats",
+          "size": "80 x 120 x 22"
+        },
+        {
+          "code": "TJPHO 10",
+          "description": "Hollow Mats",
+          "size": "100 x 150 x 22"
+        },
+        {
+          "code": "TJPHX 01",
+          "description": "Hexagon Mats",
+          "size": "40 x 60 x 23"
+        },
+        {
+          "code": "TJPHX 02",
+          "description": "Hexagon Mats",
+          "size": "100 x 150 x 23"
+        }
+      ]
+    },
+    {
+      "id": "cow-stable-mat",
+      "use_case": "stable",
+      "name": {
+        "en": "Cow & Stable Mat",
+        "fr": "Tapis Vache / Étable",
+        "de": "Kuh- / Stallmatte"
+      },
+      "description": {
+        "en": "Heavy-duty stable mats for cattle and horses. Multiple surface patterns — Triangle Top Lock, Hammer Top, Diamond Top, Check Top.",
+        "fr": "Tapis d'étable résistants pour bovins et chevaux. Plusieurs motifs de surface — Triangle Top Lock, Hammer Top, Diamond Top, Check Top.",
+        "de": "Strapazierfähige Stallmatten für Rinder und Pferde. Verschiedene Oberflächenmuster — Triangle Top Lock, Hammer Top, Diamond Top, Check Top."
+      },
+      "top_patterns": [
+        "Triangle Top Lock",
+        "Hammer Top",
+        "Diamond Top",
+        "Check Top"
+      ],
+      "variants": [
+        {
+          "code": "TJP CW 04",
+          "description": "Triangle Top - Lock",
+          "size": "2.13Ft x 1.2m x 17mm"
+        },
+        {
+          "code": "TJP CW 01",
+          "description": "Hammer Top - Straight",
+          "size": "1.82m x 1.2m x 17mm"
+        },
+        {
+          "code": "TJP CW  01",
+          "description": "Diamond Top - Sraight",
+          "size": "1.82m x 1.2m x 17mm"
+        },
+        {
+          "code": "TJP CW  01",
+          "description": "Check Top - Staright",
+          "size": "1.82m x 1.2m x 17mm"
+        },
+        {
+          "code": "TJP CW LK  02",
+          "description": "Diamond Top - Lock",
+          "size": "1.82m x 1.2m x 20mm"
+        },
+        {
+          "code": "TJP CW LK  03",
+          "description": "Hammer Top - Lock",
+          "size": "1.92m x 1.2m x 23mm"
+        }
+      ]
+    },
+    {
+      "id": "gym-mat",
+      "use_case": "gym",
+      "name": {
+        "en": "Gym Mat",
+        "fr": "Tapis de Gym",
+        "de": "Gymnastikmatte"
+      },
+      "description": {
+        "en": "Interlocking rubber gym mats for commercial and home fitness. Available in tile and roll formats.",
+        "fr": "Tapis de gym en caoutchouc emboîtables pour fitness commercial et domestique. Disponibles en dalles et rouleaux.",
+        "de": "Ineinandergreifende Gummi-Gymnastikmaten für gewerbliches und Heimfitness. Als Fliesen und Rollen erhältlich."
+      },
+      "variants": [
+        {
+          "code": "TJP GM 01",
+          "description": "Rubber Gym Mats",
+          "size": "50cm x 50cm x 10mm"
+        },
+        {
+          "code": "TJP GM 02",
+          "description": "Rubber Gym Mats",
+          "size": "50cm x 50cm x 14mm"
+        },
+        {
+          "code": "TJP GM 03",
+          "description": "Rubber Gym Mats",
+          "size": "1Mtr x 1Mtr x 14mm"
+        },
+        {
+          "code": "TJP GM 01",
+          "description": "Rubber Gym Mats",
+          "size": "90cm x 90cm x 16mm"
+        },
+        {
+          "code": "TJP GM 02",
+          "description": "Rubber Gym Mats",
+          "size": "90cm x 90cm x 15mm"
+        }
+      ]
+    },
+    {
+      "id": "restaurant-mat",
+      "use_case": "restaurant",
+      "name": {
+        "en": "Restaurant & Kitchen Mat",
+        "fr": "Tapis Restaurant / Cuisine",
+        "de": "Restaurant- / Küchenmatte"
+      },
+      "description": {
+        "en": "Anti-fatigue and drainage mats for commercial kitchens and restaurants. Connecting and standard formats.",
+        "fr": "Tapis anti-fatigue et à drainage pour cuisines professionnelles et restaurants. Formats connectables et standards.",
+        "de": "Antiermüdungs- und Drainagematten für Profiküchen und Restaurants. Verbindbare und Standardformate."
+      },
+      "variants": [
+        {
+          "code": "TJP CRM 01",
+          "description": "Connecting Mats",
+          "size": "90cm x 90cm x 12mm"
+        },
+        {
+          "code": "TJP RM 01",
+          "description": "Restaurant Mat",
+          "size": "60cm x 90cm x 12"
+        },
+        {
+          "code": "TJP RM 02",
+          "description": "Restaurant Mat",
+          "size": "90cm x 150cm x 12"
+        }
+      ]
+    },
+    {
+      "id": "glass-mat",
+      "use_case": "restaurant",
+      "name": {
+        "en": "Glass Mat",
+        "fr": "Tapis à Verre",
+        "de": "Glasmatte"
+      },
+      "description": {
+        "en": "Bar and counter rubber mats for glass drying and display.",
+        "fr": "Tapis en caoutchouc pour bar et comptoir, séchage et présentation de verres.",
+        "de": "Bar- und Thekengummimatten zum Trocknen und Präsentieren von Gläsern."
+      },
+      "variants": [
+        {
+          "code": "TJP GLM 01",
+          "description": "Glass Mats",
+          "size": "8.5cm x 60cm x 10mm"
+        },
+        {
+          "code": "TJP GLM 02",
+          "description": "Glass Mats",
+          "size": "45cm x 30cm x 10mm"
+        }
+      ]
+    },
+    {
+      "id": "vip-mat",
+      "use_case": "accessibility",
+      "name": {
+        "en": "VIP Mat",
+        "fr": "Tapis VIP",
+        "de": "VIP Matte"
+      },
+      "description": {
+        "en": "Specially designed for the aged and handicapped. Anti-slip large format mats.",
+        "fr": "Spécialement conçu pour les personnes âgées et handicapées. Grands tapis antidérapants.",
+        "de": "Speziell für ältere und behinderte Menschen. Rutschfeste Großformatmatten."
+      },
+      "variants": [
+        {
+          "code": "TJP VIP 01",
+          "description": "VIP Mat",
+          "size": "91cm x 156cm x 20mm"
+        }
+      ]
+    },
+    {
+      "id": "roll-mat",
+      "use_case": "commercial",
+      "name": {
+        "en": "Roll Mat",
+        "fr": "Tapis en Rouleau",
+        "de": "Rollenmatte"
+      },
+      "description": {
+        "en": "Large format rubber roll mats for commercial corridors, gyms and outdoor areas. Hexagon, hollow, squarow and comfort patterns.",
+        "fr": "Tapis en rouleau grand format pour couloirs commerciaux, gymnases et espaces extérieurs. Motifs hexagone, creux, carré et confort.",
+        "de": "Großformatige Gummirollenmatten für Gewerbekorridore, Turnhallen und Außenbereiche. Sechseck-, Hohl-, Quadrat- und Komfortmuster."
+      },
+      "variants": [
+        {
+          "code": "TJP HX RL 01",
+          "description": "Hexagon Roll Mat",
+          "size": "1Mtr x 7.5Mtr x 23mm"
+        },
+        {
+          "code": "TJP HX RL 02",
+          "description": "Hexagon Roll Mat",
+          "size": "1Mtr x 10.5Mtr x 23mm"
+        },
+        {
+          "code": "TJP RRL 01",
+          "description": "Restaurant Roll Mat",
+          "size": "90cm x 298cm x 12mm"
+        },
+        {
+          "code": "TJP RRL 02",
+          "description": "Restaurant Roll Mat",
+          "size": "90cm x 446cm x 12mm"
+        },
+        {
+          "code": "TJP RRL 03",
+          "description": "Restaurant Roll Mat",
+          "size": "90cm x 594cm x 12mm"
+        },
+        {
+          "code": "TJP RRL 04",
+          "description": "Restaurant Roll Mat",
+          "size": "90cm x 1030cm x 12mm"
+        },
+        {
+          "code": "TJP HRL 01",
+          "description": "Hollow Roll Mat",
+          "size": "1Mtr x 7.5Mtr x 23mm"
+        },
+        {
+          "code": "TJP HRL 02",
+          "description": "Hollow Roll Mat",
+          "size": "1Mtr x 10.5Mtr x 23mm"
+        },
+        {
+          "code": "TJP SQRL 01",
+          "description": "Squarow Roll Mat",
+          "size": "1Mtr x 10.5Mtr x 10mm"
+        },
+        {
+          "code": "TJP CRL 01",
+          "description": "Comfort Roll Mat",
+          "size": "1Mtr x 9Mtr x 10mm"
+        }
+      ]
+    },
+    {
+      "id": "polypropylene-mat",
+      "use_case": "entrance",
+      "name": {
+        "en": "Polypropylene Door Mat",
+        "fr": "Tapis de Porte Polypropylène",
+        "de": "Polypropylen-Türmatte"
+      },
+      "description": {
+        "en": "Colourful polypropylene door mats for residential and commercial entrances.",
+        "fr": "Tapis de porte en polypropylène colorés pour entrées résidentielles et commerciales.",
+        "de": "Bunte Polypropylen-Türmatten für Wohn- und Gewerbeeingang."
+      },
+      "variants": [
+        {
+          "code": "TJP PPR 01",
+          "description": "Polypropylene Mat",
+          "size": "30cm x 45cm"
+        },
+        {
+          "code": "TJP PPR 02",
+          "description": "Polypropylene Mat",
+          "size": "30cm x 70cm"
+        },
+        {
+          "code": "TJP PPR 03",
+          "description": "Polypropylene Mat",
+          "size": "40cm x 60cm"
+        },
+        {
+          "code": "TJP PPR 04",
+          "description": "Polypropylene Mat",
+          "size": "45cm x 75cm"
+        }
+      ]
+    },
+    {
+      "id": "grill-mat",
+      "use_case": "entrance",
+      "name": {
+        "en": "Grill Mat",
+        "fr": "Tapis Grille",
+        "de": "Gittermatte"
+      },
+      "description": {
+        "en": "Decorative rubber grill mats for home and office entrances.",
+        "fr": "Tapis grille décoratifs en caoutchouc pour entrées résidentielles et de bureau.",
+        "de": "Dekorative Gummi-Gittermatten für Haus- und Büroeingang."
+      },
+      "variants": [
+        {
+          "code": "TJP GRM 01",
+          "description": "Grill Mats",
+          "size": "40cm x 60cm"
+        },
+        {
+          "code": "TJP GRM 02",
+          "description": "Grill Mats",
+          "size": "45cm x 75cm"
+        }
+      ]
+    },
+    {
+      "id": "entrance-mat",
+      "use_case": "entrance",
+      "name": {
+        "en": "Entrance Mat",
+        "fr": "Tapis d'Entrée",
+        "de": "Eingangsmatte"
+      },
+      "description": {
+        "en": "Classic rubber entrance mats for indoor and outdoor use.",
+        "fr": "Tapis d'entrée classiques en caoutchouc pour usage intérieur et extérieur.",
+        "de": "Klassische Gummi-Eingangsmatten für Innen- und Außenbereich."
+      },
+      "variants": [
+        {
+          "code": "TJP ETM 01",
+          "description": "Entrance Mat",
+          "size": "40cm x 60cm"
+        },
+        {
+          "code": "TJP ETM 02",
+          "description": "Entrance Mat",
+          "size": "45cm x 75cm"
+        }
+      ]
+    },
+    {
+      "id": "misc",
+      "use_case": "accessories",
+      "name": {
+        "en": "Accessories",
+        "fr": "Accessoires",
+        "de": "Zubehör"
+      },
+      "description": {
+        "en": "Step mats, boot scrapers, boot trays, wave mats, bubble mats and tyre flaps.",
+        "fr": "Tapis marche, grattoirs, bacs à chaussures, tapis vague, tapis bulle et bavettes de pneus.",
+        "de": "Stufenmatten, Schuhabstreifer, Schuhablagen, Wellenmatten, Blasenmatten und Reifenklappen."
+      },
+      "variants": [
+        {
+          "code": "TJP STM 01",
+          "description": "Step Mats",
+          "size": "25cm x 75cm"
+        },
+        {
+          "code": "TJP BSP 01",
+          "description": "Boot Scrap Mat",
+          "size": "39cm x 31cm x 64mm"
+        },
+        {
+          "code": "TJP BT 01",
+          "description": "Boot Tray",
+          "size": "40cm x 80cm"
+        },
+        {
+          "code": "TJP WM 01",
+          "description": "Wave Mat",
+          "size": "90cm x 150cm x 12mm"
+        },
+        {
+          "code": "TJP BLM 01",
+          "description": "Bubble Mat",
+          "size": "60cm x 90cm x 12mm"
+        },
+        {
+          "code": "TJP BLM 02",
+          "description": "Bubble Mat",
+          "size": "90cm x 120cm x 12mm"
+        },
+        {
+          "code": "TJP BLM 03",
+          "description": "Bubble Mat",
+          "size": "90cm x 150cm x 12mm"
+        },
+        {
+          "code": "TJP TF 01",
+          "description": "Tyre Flaps",
+          "size": ""
+        },
+        {
+          "code": "TJP TF 02",
+          "description": "Tyre Flaps",
+          "size": ""
+        },
+        {
+          "code": "TJP TF 03",
+          "description": "Tyre Flaps",
+          "size": ""
+        },
+        {
+          "code": "TJP TF 04",
+          "description": "Tyre Flaps",
+          "size": ""
+        },
+        {
+          "code": "TJP TF 05",
+          "description": "Tyre Flaps",
+          "size": ""
+        }
+      ]
+    }
+  ]
+}

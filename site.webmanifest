@@ -1,0 +1,32 @@
+{
+  "name": "Rubbermats Switzerland",
+  "short_name": "Rubbermats",
+  "description": "Distributeur suisse de tapis en caoutchouc TJP Mats",
+  "start_url": "/fr/",
+  "display": "standalone",
+  "theme_color": "#2D6A3F",
+  "background_color": "#111111",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/logo-rubbermats-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

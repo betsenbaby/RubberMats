@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+# rubbermats.ch local config
+assets/php/mail-config.local.php
+_generate-*.js
+index-old-homepage.html

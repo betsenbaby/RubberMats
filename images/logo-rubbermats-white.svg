@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" width="220" height="48" role="img">
+  <title>Rubbermats Switzerland</title>
+  <desc>Rubbermats logo — white variant for dark backgrounds</desc>
+
+  <polygon points="24,3 40,12 40,30 24,39 8,30 8,12" fill="#2D6A3F"/>
+  <polygon points="24,9 34,15 34,27 24,33 14,27 14,15" fill="none" stroke="#4A9B5F" stroke-width="1.8"/>
+  <line x1="24" y1="16" x2="24" y2="26" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="19" y1="21" x2="29" y2="21" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+
+  <text x="50" y="19"
+        font-family="Arial Black, Arial, Helvetica, sans-serif"
+        font-size="15" font-weight="900"
+        fill="#ffffff"
+        letter-spacing="2.5">RUBBER</text>
+  <text x="50" y="35"
+        font-family="Arial Black, Arial, Helvetica, sans-serif"
+        font-size="15" font-weight="900"
+        fill="#4A9B5F"
+        letter-spacing="2.5">MATS</text>
+  <text x="51" y="44"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="6" font-weight="400"
+        fill="#aaaaaa"
+        letter-spacing="1.8">SWITZERLAND</text>
+</svg>

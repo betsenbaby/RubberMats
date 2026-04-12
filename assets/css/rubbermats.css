@@ -1,0 +1,413 @@
+/* ==========================================================================
+   RubberMats.ch — Custom Overrides (on top of Litho v2.2)
+   ========================================================================== */
+
+/* ---------- Brand Colours ---------- */
+:root {
+  --rm-black:         #1a1a1a;
+  --rm-dark-gray:     #2d2d2d;
+  --rm-accent:        #2D6A3F;
+  --rm-accent-light:  #4A9B5F;
+  --rm-accent-dark:   #1a4a2b;
+  --rm-accent-rgb:    45, 106, 63;
+  --rm-white:         #ffffff;
+  --rm-light-gray:    #f5f5f5;
+}
+
+/* ---------- Litho Orange Overrides → Green ---------- */
+.text-dark-orange,
+.btn-link.text-dark-orange,
+a.text-dark-orange-hover:hover {
+  color: var(--rm-accent) !important;
+}
+
+.bg-dark-orange {
+  background-color: var(--rm-accent) !important;
+}
+
+.btn-neon-orange,
+a.btn-neon-orange {
+  background-color: var(--rm-accent) !important;
+  border-color: var(--rm-accent) !important;
+  color: var(--rm-white) !important;
+}
+
+.btn-neon-orange:hover,
+a.btn-neon-orange:hover {
+  background-color: var(--rm-accent-dark) !important;
+  border-color: var(--rm-accent-dark) !important;
+}
+
+/* ---------- Language Switcher (dark navbar) ---------- */
+.lang-switcher {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.lang-switcher a {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  opacity: 0.7;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.lang-switcher a:hover {
+  color: #ffffff !important;
+  opacity: 1;
+  border-color: rgba(255,255,255,0.3);
+}
+
+.lang-switcher a.active {
+  background-color: var(--rm-accent) !important;
+  color: #ffffff !important;
+  border-color: var(--rm-accent) !important;
+  opacity: 1;
+}
+
+/* ---------- CTA Button Override ---------- */
+.btn-rm-primary {
+  background-color: var(--rm-accent);
+  border-color: var(--rm-accent);
+  color: var(--rm-white);
+}
+
+.btn-rm-primary:hover,
+.btn-rm-primary:focus {
+  background-color: var(--rm-accent-dark);
+  border-color: var(--rm-accent-dark);
+  color: var(--rm-white);
+}
+
+/* ---------- Product Grid Tweaks ---------- */
+.product-card {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Filter Bar ---------- */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.btn-filter {
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--rm-dark-gray);
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-filter:hover {
+  border-color: var(--rm-accent);
+  color: var(--rm-accent);
+}
+
+.btn-filter.active {
+  background-color: var(--rm-accent);
+  border-color: var(--rm-accent);
+  color: var(--rm-white);
+}
+
+/* ---------- Product Cards ---------- */
+.product-badge {
+  font-size: 10px;
+  line-height: 1;
+}
+
+.product-img-wrap img {
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img-wrap img {
+  transform: scale(1.05);
+}
+
+.product-codes-list {
+  font-family: monospace;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Team Cards ---------- */
+.team-card {
+  text-align: center;
+}
+
+.team-card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--rm-light-gray);
+}
+
+/* ---------- Counter Section ---------- */
+.counter-section .counter-box {
+  text-align: center;
+}
+
+.counter-section .counter-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--rm-accent);
+  line-height: 1;
+}
+
+/* ---------- Trust Badges ---------- */
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: var(--rm-light-gray);
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  color: var(--rm-dark-gray);
+}
+
+/* ---------- Footer ---------- */
+.footer-rm {
+  background-color: var(--rm-dark-gray);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-rm a {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.footer-rm a:hover {
+  color: var(--rm-accent);
+}
+
+/* ---------- Navbar Logo ---------- */
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    height: 32px;
+  }
+}
+
+/* ---------- Product detail — variant table ---------- */
+.product-code {
+  font-family: monospace;
+  font-size: 12px;
+  background: #f0f4f0;
+  color: #1a4a2b;
+  padding: 2px 7px;
+  border-radius: 3px;
+  border: 1px solid #c8ddc8;
+  white-space: nowrap;
+}
+.size-cell {
+  white-space: nowrap;
+  color: #444;
+}
+.btn-quote-sm {
+  font-size: 11px;
+  padding: 5px 12px;
+  background: var(--rm-accent);
+  color: #fff !important;
+  border-radius: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline-block;
+}
+.btn-quote-sm:hover {
+  background: var(--rm-accent-dark);
+}
+.pricing-callout {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f0f7f2;
+  border: 1px solid #b8d8c0;
+  border-left: 4px solid var(--rm-accent);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.pricing-callout-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+.pricing-callout-text {
+  flex: 1;
+  min-width: 180px;
+}
+.pricing-callout-text strong {
+  display: block;
+  font-size: 15px;
+  color: var(--rm-accent-dark);
+  margin-bottom: 3px;
+}
+.pricing-callout-text span {
+  font-size: 13px;
+  color: #555;
+}
+.btn-contact-price {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 20px;
+  background: var(--rm-accent);
+  color: #fff !important;
+  border-radius: 5px;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.btn-contact-price:hover {
+  background: var(--rm-accent-dark);
+}
+.card-price-cta {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--rm-accent);
+  font-weight: 600;
+  margin: 2px 0 8px;
+}
+
+/* ---------- Product grid fix (no Isotope) ---------- */
+#product-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+#product-grid .grid-item {
+  position: relative !important;
+  float: none !important;
+}
+
+/* ---------- Product detail page fixes ---------- */
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+/* Force dark text in white content sections */
+.product-detail-section,
+.product-detail-section p,
+.product-detail-section h1,
+.product-detail-section h2,
+.product-detail-section h3,
+.product-detail-section h4,
+.product-detail-section h5,
+.product-detail-section li,
+.product-detail-section td,
+.product-detail-section label,
+.product-detail-section span:not(.btn-quote-sm):not(.product-badge) {
+  color: #1a1a1a;
+}
+
+#product-description {
+  color: #444444 !important;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+#product-title {
+  color: #ffffff !important;
+}
+
+#product-use-badge {
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 3px;
+  background: var(--rm-accent) !important;
+  color: #ffffff !important;
+  display: inline-block;
+  margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Variant table */
+#variant-table {
+  color: #1a1a1a;
+  background: #ffffff;
+  width: 100%;
+}
+#variant-table thead th {
+  background: #232323;
+  color: #ffffff !important;
+  padding: 12px 16px;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+}
+#variant-table tbody td {
+  padding: 10px 16px;
+  border-bottom: 1px solid #eeeeee;
+  color: #333333 !important;
+  vertical-align: middle;
+}
+#variant-table tbody tr:hover {
+  background: #f8faf8;
+}
+.desc-cell {
+  color: #666 !important;
+  font-size: 13px;
+}
+
+/* Related products section */
+.related-section h3,
+.related-section h4,
+.related-section h5,
+.related-section p {
+  color: #1a1a1a !important;
+}
+
+/* Breadcrumb in hero */
+#breadcrumb .breadcrumb-item a {
+  color: #aaaaaa;
+  font-size: 13px;
+}
+#breadcrumb .breadcrumb-item.active {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+/* ---------- Footer dev credit ---------- */
+.footer-dev-credit {
+  font-size: 11px;
+  color: #555555;
+  margin-top: 6px;
+}
+.footer-dev-credit a {
+  color: #4A9B5F !important;
+  text-decoration: none;
+}
+.footer-dev-credit a:hover {
+  color: #2D6A3F !important;
+  text-decoration: underline;
+}
